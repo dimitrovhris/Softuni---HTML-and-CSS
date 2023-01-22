@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url("dancingscript.ttf");
+}
+h1{
+    font-family: Dancing Script;
+}
