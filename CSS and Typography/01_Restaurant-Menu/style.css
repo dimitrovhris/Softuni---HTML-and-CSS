@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Nice font;
+    src: url("dancingscript.ttf");
+}
+@font-face{
+    font-family: "Graphic Semibold Web";
+    src: url(graphicsemibold.ttf)
+}
+body{
+    text-align: center;
+}
+h1{
+    font-family: "Nice font", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.15;
+}
+span{
+    font-family: "Graphic Semibold Web", Arial;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.46;
+    color: #5c5a5a;
+}
+p{
+    
+}
