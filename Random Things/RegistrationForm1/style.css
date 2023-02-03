@@ -1,0 +1,42 @@
+form{
+    display: inline-block;
+    border-top: 3px solid gray;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid gray;
+    
+}
+table{
+    height: 450px;
+    width: 450px;
+
+}
+th{
+
+    font-size: xx-large;
+}
+table{
+    border-spacing: 5px;
+}
+th, td{
+    border-top: 1px solid gray;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid gray;
+}
+th{
+    background-color:rgb(255, 255, 170);
+    color: red;
+}
+td{
+    background-color: rgb(0, 204, 255);
+    padding-left: 15px;
+    padding-top: 0px;
+}
+.button{
+    padding: 10px 30px;
+    font-size: 16px;
+}
+select{
+    font-size: 16px;
+}

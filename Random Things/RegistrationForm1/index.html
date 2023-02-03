@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form>
+        <table>
+            <thead>
+                <th colspan="2">Registration Form</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Enter Name</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <td>Enter Address</td>
+                    <td><textarea rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Select Game</td>
+                    <td>
+                        <input class = "checkbox" type="checkbox"> Hockey
+                        <br>
+                        <input class = "checkbox" type="checkbox"> Football
+                        <br>
+                        <input class = "checkbox" type="checkbox"> Badminton
+                        <br>
+                        <input class = "checkbox" type="checkbox"> Cricket
+                        <br>
+                        <input class = "checkbox" type="checkbox"> Volleyball
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" checked="true"> Male
+                        <input type="radio" name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select ur age</td>
+                    <td>
+                        <select name="Select Age" id="age-selector">
+                            <option>Select</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Photo</td>
+                    <td>
+                        <input type="file" accept=".jpg, .png">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input class = "button" type="button" value="Click Me">
+                        <input class = "button" type="reset" value="Reset">
+                        <input class = "button" type="submit" value="Submit Form">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
