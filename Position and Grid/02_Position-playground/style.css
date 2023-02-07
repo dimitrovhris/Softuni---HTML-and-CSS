@@ -1,0 +1,35 @@
+@import "https://use.fontawesome.com/releases/v5.10.2/css/all.css";
+body{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+    position: relative;
+}
+.first__div{
+    height: 50vh;
+    background: rgb(20,22,156);
+    background: linear-gradient(90deg, rgba(20,22,156,1) 8%, rgba(70,252,169,1) 100%);
+}
+.second__div{
+    height: 50vh;
+    background: rgb(253,29,96);
+    background: linear-gradient(90deg, rgba(253,29,96,1) 19%, rgba(242,110,6,1) 100%);
+}
+.first__div section img{
+    position: absolute;
+    height: 40%;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%);
+}
+.second__div section img{
+    position: absolute;
+    height: 90%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
