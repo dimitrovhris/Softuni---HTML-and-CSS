@@ -1,0 +1,10 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-family: Georgia, serif;
+}
