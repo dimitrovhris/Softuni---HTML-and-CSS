@@ -1,0 +1,121 @@
+@import "https://use.fontawesome.com/releases/v5.10.2/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+main{
+    display: grid;
+}
+img{
+    height: 60vw;
+    width: 100%;
+    object-fit: cover;
+}
+section{
+    display: grid;
+    grid-template-areas:
+    "header header header header" 
+    "header header header header" 
+    "header header header header" 
+    "header header header header" 
+    "main main main aside" 
+    "main main main aside"
+    "main main main aside"  
+    "main main main aside" 
+    "footer footer footer aside" ;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 200px;
+    
+}
+h1, h2{
+    font-family: 'Abril Fatface', cursive;
+}
+header, .aside-div, .main-div, footer{
+    margin: 0 auto;
+    grid-area: header;
+    position: relative;
+    text-align: center;
+}
+header{
+    width: 100%;
+}
+.main-div{
+    grid-area: main;
+}
+.aside-div{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+
+.interior-design{
+    position: absolute;
+    width: 310px;
+    height: 270px;
+    top: 40px;
+    left: 70px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 20px;
+}
+.interior-design h1{
+    margin-bottom: 0;
+    font-size: 50px;
+}
+.interior-design h3{
+    margin-top: 0;
+    
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+.interior-design hr{
+    border-color: white;
+    border-style: solid;
+    width: 60%;
+    display: inline-block;
+}
+.second-head-div{
+    padding-right: 15px;
+    position: absolute;
+    right: 40px;
+    top: 30%;
+    width: 290px;
+    height: 300px;
+    text-align: right;
+    background: rgb(164,155,149);
+    background: linear-gradient(90deg, rgba(164,155,149,1) 0%, rgba(202,200,198,1) 100%);
+    color: white;
+    margin-top: 0;
+    line-height: 1.5;
+    text-shadow: 1px 1px #090909;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.second-head-div p{
+    position: relative;
+    bottom: 50px;
+}
+.quotes{
+    position: relative;
+    top: 20px;
+    font-size: 80px;
+    margin: 0;
+    color: #8d8581;
+}
+.main-div{
+    padding: 0 80px;
+    padding-bottom: 50px;
+    text-align: left;
+    line-height: 1.5;
+    background-color: #f2f0f3
+}
+span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.aside-div{
+    
+    
+}
