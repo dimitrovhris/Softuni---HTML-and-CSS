@@ -1,0 +1,68 @@
+@media (max-width: 600px){
+   main, body{
+      margin: 0;
+      padding: 0;
+   }
+   main{
+      width: 100%;
+   }
+   button{
+      display: none;
+   }
+   main .left-to-right article {
+      
+      width: 90%;
+      height: min-content;
+      border-radius: 100px;
+      padding: 30px;  
+      font-size: 20px;
+      margin-top: 50px;
+   }
+
+   .left-to-right:first-child{
+      padding: 40px;
+   }
+   
+   main section:nth-child(2){
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      padding: 0px 50px;
+   }
+   header h1{
+      font-size: 40px;
+      margin-top: 0;
+   }
+   main section:nth-child(2) article img{
+      width: 100%;
+      align-items: center;
+   }
+
+   main section:nth-child(2), main section:nth-child(4){
+      display: flex;
+      flex-direction: column;
+   }
+   main section:nth-child(2) article, main section:nth-child(4) article{
+      margin: 0;
+      width: auto;
+   }
+   form{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+   }
+   form *{
+      width: 70%;
+   }
+   section form label input, section form textarea{
+      width: 90%;
+   }
+   section form label{
+      text-align: center;
+   }
+   main section:nth-child(2) article, main section:nth-child(4) article{
+      align-items: center;
+   }
+   
+}
