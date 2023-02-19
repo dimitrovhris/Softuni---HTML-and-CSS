@@ -1,0 +1,146 @@
+@import "https://use.fontawesome.com/releases/v5.10.2/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin-left: 0;
+}
+header{
+    height: 80vh;
+    width: 100%;
+}
+header *{
+    display: inline-block;
+}
+header img{
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
+main div{
+    width: 300px;
+}
+
+.main-head{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 820px;
+    left: 80px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.second-header-div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 600px;
+    left: 350px;
+}
+.second-header-div button{
+    width: 180px;
+}
+.second-header-div p{
+    text-align: left;
+}
+main{
+    text-align: center;
+}
+.main-div{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.main-div div{
+    height: 350px;
+    margin-bottom: 150px;
+}
+.main-div img{
+    width: 100%;
+    height: 70%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+footer{
+    color: white;
+    background-color: black;
+    padding: 50px 200px;
+    margin: 60px 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+footer h1{
+    font-size: 40px;
+    margin-top: 80px;
+    font-weight: 800;
+}
+header button{
+    background-color: #370511;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+header{
+    color: #370511;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #370511;
+}
+header h1{
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+header h3{
+    margin-top: 0;
+    font-size: 28px;
+    
+}
+header p{
+    width: 16%;
+}
+main button{
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: white;
+    font-weight: 700;
+    border-style: solid;
+}
+footer h3{
+    font-weight: 400;
+}
+footer{
+    width: 80%;
+}
+button:hover, i:hover{
+    cursor: pointer;
+}
+i{
+    margin-right: 15px;
+    font-size: 25px;
+}
+
