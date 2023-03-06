@@ -1,9 +1,18 @@
 {
     "version": "0.2.0",
     "configurations": [
+      {
+        "name": "Launch Program",
+        "program": "${workspaceFolder}/app.js",
+        "request": "launch",
+        "skipFiles": [
+          "<node_internals>/**"
+        ],
+        "type": "node"
+      },
         {
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/JavaScript/Syntax_Fundamentals/Exercise/Ex16SortingNumbers.js",
+            "name": "Launch Program3",
+            "program": "${workspaceFolder}/JavaScript/Functions And Statements/Lab/Ex06SignCheck.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
