@@ -4,7 +4,6 @@ function lockedProfile() {
         let button = profile.getElementsByTagName('button')[0];
         button.addEventListener('click', showInfo);
         function showInfo(e) {
-
             let radioButtonLock = e.target.parentElement.getElementsByTagName('input')[0];
             if (radioButtonLock.checked !== true) {
                 if (button.textContent !== 'Hide it') {
