@@ -17,5 +17,10 @@ function loadRepos() {
 		}
 	}
 	)
+	.catch((err) => {
+		let li = document.createElement('li');
+		li.textContent = username;
+		ul.appendChild(li);
+	})
 
 }
