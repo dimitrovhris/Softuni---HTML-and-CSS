@@ -7,6 +7,7 @@ function solve() {
     function addSong(event) {
 
         event.preventDefault();
+        
         let genreInput = document.getElementById('genre');
         let nameInput = document.getElementById('name');
         let authorInput = document.getElementById('author');
@@ -16,7 +17,7 @@ function solve() {
         let name = nameInput.value;
         let author = authorInput.value;
         let date = dateInput.value;
-
+        if(genre !== '' && name !== '' && author !== '' && date !== ''){
         genreInput.value = '';
         nameInput.value = '';
         authorInput.value = '';
@@ -49,7 +50,7 @@ function solve() {
 
         let buttonSave = document.createElement('button');
         buttonSave.setAttribute('class', 'save-btn');
-        buttonSave.textContent = 'Save Song';
+        buttonSave.textContent = 'Save song';
         buttonSave.addEventListener('click', saveSong);
 
         let buttonLike = document.createElement('button');
@@ -80,11 +81,6 @@ function solve() {
 
         function saveSong(event) {
             
-            
-            
-           
-           
-
             let divSaved = Array.from(document.getElementsByClassName('saved-container'))[0];
             let newDiv = document.createElement('div');
             newDiv.setAttribute('class', 'hits-info');
@@ -117,13 +113,11 @@ function solve() {
             divSaved.appendChild(newDiv);
 
             function deleteSong(event){
-                
                 let section = event.target.parentNode;
-                
-                
                 section.remove();
             }
             event.target.parentNode.remove();
         }
     }
+}
 }
