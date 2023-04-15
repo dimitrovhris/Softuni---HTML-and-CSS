@@ -47,7 +47,7 @@ function solve(input) {
                     let index = Number(indexRemove);
                     let indexCounter = 0;
                     let taskKeys = Object.keys(asiignees[nameRemove]);
-                    if ((index >=  Object.keys(taskKeys).length) || (index < Object.keys(taskKeys).length - 1)) {
+                    if (index >= Object.keys(taskKeys).length || index  < 0){
                         console.log('Index is out of range!');
                     } else {
                         for (const task of taskKeys) {
