@@ -37,8 +37,6 @@ function solve() {
         article.setAttribute('class', 'task-card');
         article.setAttribute('id', `task-${taskId}`);
 
-        
-
         let div1 = document.createElement('div');
         div1.setAttribute('class', `task-card-label ${classes[label]}`);
         div1.innerHTML = `${label} ${icons[label]}`;
@@ -123,7 +121,6 @@ function solve() {
             mainButtonDelete.addEventListener('click', deleteOfficially);
 
             function deleteOfficially(event){
-                
                 event.preventDefault();
                 let hidden = Array.from(event.target.parentNode.parentNode.children)[0];
                 let articleToDelete = document.getElementById(hidden.value);
