@@ -50,8 +50,8 @@ function solve() {
                 let liChildren = Array.from(liParent.children);
                 let articleChildren = Array.from(liChildren[0].children);
                 let heading = articleChildren[0].textContent;
-                let p1 = articleChildren[1].textContent;
-                let p2 = articleChildren[2].textContent;
+                let p1 = articleChildren[1].textContent.split('Category: ')[1];
+                let p2 = articleChildren[2].textContent.split('Content: ')[1];
                 
                 liParent.remove();
                 titleInput.value = heading;

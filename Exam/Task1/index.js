@@ -26,16 +26,18 @@ function solve(input) {
         } else if (command === 'Rage') {
             let horseName = commandRow[1];
             let index = horsesArray.indexOf(horseName);
-            if (index < input.length - 2) {
-                let nextHorse = horsesArray[index + 1];
-                let nextNextHorse = horsesArray[index + 2];
-                horsesArray[index + 2] = horseName;
-                horsesArray[index + 1] = nextNextHorse;
-                horsesArray[index] = nextHorse;
-            } else if (index === input.length - 2) {
-                let nextHorse = horsesArray[index + 1];
-                horsesArray[index] = nextHorse;
-                horsesArray[horsesArray.length - 1] = horseName;
+            if(index !== horsesArray.length - 1){
+                if(index === horsesArray.length -2){
+                    let nextHorse = horsesArray[index + 1];
+                    horsesArray[index + 1] = horseName;
+                    horsesArray[index] = nextHorse;
+                } else{
+                    let nextHorse = horsesArray[index+ 1];
+                    let nextNextHorse = horsesArray[index+2];
+                    horsesArray[index] = nextHorse;
+                    horsesArray[index+1] = nextNextHorse;
+                    horsesArray[index+2] = horseName;
+                }
             }
             console.log(`${horseName} rages 2 positions ahead.`);
         } else if (command === 'Miracle') {
@@ -53,9 +55,9 @@ function solve(input) {
     }
 }
 solve(
-    ['Onyx|Domino|Sugar|Fiona',
+    ['Sugar|Domino|Oxyx|Fiona',
         'Trouble Onyx',
         'Retake Onyx Sugar',
-        'Rage Domino',
+        'Rage Fiona',
         'Miracle',
         'Finish'])
